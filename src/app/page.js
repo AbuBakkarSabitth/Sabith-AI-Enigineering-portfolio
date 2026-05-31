@@ -113,7 +113,7 @@ export default function Home() {
             <div className="mt-8 flex gap-4">
 
               <a
-                href="https://github.com/AbuBakkarSabith/crm-automation-api"
+                href="https://github.com/AbuBakkarSabitth/crm-automation-api"
                 target="_blank"
                 className="bg-white text-black px-5 py-3 rounded-lg hover:bg-gray-300"
               >
