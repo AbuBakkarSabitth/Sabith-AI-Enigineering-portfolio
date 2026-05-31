@@ -239,7 +239,7 @@ export default function Home() {
         <div className="mt-6 flex justify-center gap-4">
 
           <a
-            href="https://github.com/AbuBakkarSabith"
+            href="https://github.com/AbuBakkarSabitth"
             target="_blank"
             className="bg-white text-black px-6 py-3 rounded-lg hover:bg-gray-300"
           >
