@@ -15,18 +15,24 @@ export default function Home() {
         </h1>
 
         <p className="mt-6 text-lg max-w-xl">
-          I build AI agents, machine learning models, and real-world systems.
+          I build AI agents, machine learning models, APIs, and real-world systems.
           My goal is to turn ideas into impactful AI solutions.
         </p>
 
         <div className="mt-8 flex gap-4">
-          <button className="bg-purple-600 px-6 py-3 rounded-lg hover:bg-purple-700">
+          <a
+            href="#projects"
+            className="bg-purple-600 px-6 py-3 rounded-lg hover:bg-purple-700"
+          >
             View Projects
-          </button>
+          </a>
 
-          <button className="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black">
+          <a
+            href="#contact"
+            className="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black"
+          >
             Contact Me
-          </button>
+          </a>
         </div>
 
       </div>
@@ -34,37 +40,126 @@ export default function Home() {
       {/* Projects Section */}
       <div id="projects" className="py-20 px-6">
 
-        <h2 className="text-3xl font-bold text-center">
-          Projects
+        <h2 className="text-4xl font-bold text-center">
+          Featured Projects
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-6 mt-10">
+        <p className="text-center text-gray-400 mt-4">
+          Real-world systems and backend applications I have built.
+        </p>
 
-          <div className="bg-gray-900 p-6 rounded-lg hover:scale-105 transition">
-            <h3 className="text-xl font-semibold">
+        <div className="grid md:grid-cols-2 gap-8 mt-14 max-w-6xl mx-auto">
+
+          {/* CRM Automation API */}
+          <div className="bg-gray-900 p-8 rounded-2xl border border-gray-800 hover:border-purple-500 transition">
+
+            <h3 className="text-2xl font-bold">
+              CRM Automation API
+            </h3>
+
+            <p className="mt-4 text-gray-400 leading-7">
+              A professional CRM Automation Backend API built using Node.js,
+              Express.js, and MongoDB. The system supports lead management,
+              analytics, Telegram integration, filtering, pagination,
+              and cloud deployment.
+            </p>
+
+            {/* Features */}
+            <div className="mt-6">
+              <h4 className="font-semibold text-lg">
+                Key Features:
+              </h4>
+
+              <ul className="mt-3 space-y-2 text-gray-400">
+                <li>✅ Lead Management System</li>
+                <li>✅ Search & Filter Leads</li>
+                <li>✅ Telegram Notification Integration</li>
+                <li>✅ Analytics API</li>
+                <li>✅ RESTful API Architecture</li>
+                <li>✅ Cloud Deployment with Render</li>
+              </ul>
+            </div>
+
+            {/* Tech Stack */}
+            <div className="mt-6 flex flex-wrap gap-3">
+
+              <span className="bg-purple-600 px-3 py-1 rounded-full text-sm">
+                Node.js
+              </span>
+
+              <span className="bg-purple-600 px-3 py-1 rounded-full text-sm">
+                Express.js
+              </span>
+
+              <span className="bg-purple-600 px-3 py-1 rounded-full text-sm">
+                MongoDB
+              </span>
+
+              <span className="bg-purple-600 px-3 py-1 rounded-full text-sm">
+                Mongoose
+              </span>
+
+              <span className="bg-purple-600 px-3 py-1 rounded-full text-sm">
+                Telegram API
+              </span>
+
+              <span className="bg-purple-600 px-3 py-1 rounded-full text-sm">
+                Render
+              </span>
+
+            </div>
+
+            {/* Buttons */}
+            <div className="mt-8 flex gap-4">
+
+              <a
+                href="https://github.com/AbuBakkarSabith/crm-automation-api"
+                target="_blank"
+                className="bg-white text-black px-5 py-3 rounded-lg hover:bg-gray-300"
+              >
+                GitHub Repo
+              </a>
+
+              <a
+                href="https://crm-automation-api-zri3.onrender.com/api/leads"
+                target="_blank"
+                className="border border-white px-5 py-3 rounded-lg hover:bg-white hover:text-black"
+              >
+                Live API
+              </a>
+
+            </div>
+
+          </div>
+
+          {/* Second Project */}
+          <div className="bg-gray-900 p-8 rounded-2xl border border-gray-800 hover:border-purple-500 transition">
+
+            <h3 className="text-2xl font-bold">
               AI Diet Assistant
             </h3>
-            <p className="mt-2 text-gray-400">
-              AI-based system that suggests diet plans based on user data.
-            </p>
-          </div>
 
-          <div className="bg-gray-900 p-6 rounded-lg hover:scale-105 transition">
-            <h3 className="text-xl font-semibold">
-              Symbol Table Compiler
-            </h3>
-            <p className="mt-2 text-gray-400">
-              Built using Flex & Bison to analyze and store program symbols.
+            <p className="mt-4 text-gray-400 leading-7">
+              AI-powered assistant that suggests personalized diet plans
+              based on user input and health-related information.
             </p>
-          </div>
 
-          <div className="bg-gray-900 p-6 rounded-lg hover:scale-105 transition">
-            <h3 className="text-xl font-semibold">
-              Login System Backend
-            </h3>
-            <p className="mt-2 text-gray-400">
-              Secure authentication system using Node.js and MongoDB.
-            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+
+              <span className="bg-purple-600 px-3 py-1 rounded-full text-sm">
+                Python
+              </span>
+
+              <span className="bg-purple-600 px-3 py-1 rounded-full text-sm">
+                Machine Learning
+              </span>
+
+              <span className="bg-purple-600 px-3 py-1 rounded-full text-sm">
+                AI
+              </span>
+
+            </div>
+
           </div>
 
         </div>
@@ -78,10 +173,11 @@ export default function Home() {
           About Me
         </h2>
 
-        <p className="mt-6 max-w-2xl mx-auto text-gray-400">
-          I am a CSE student passionate about Artificial Intelligence, Machine Learning,
-          and Automation. I am currently building real-world AI systems while learning
-          advanced ML concepts and software development.
+        <p className="mt-6 max-w-2xl mx-auto text-gray-400 leading-8">
+          I am a CSE student passionate about Artificial Intelligence,
+          Backend Engineering, Machine Learning, and Automation.
+          I enjoy building scalable systems and solving real-world problems
+          through software and AI technologies.
         </p>
 
       </div>
@@ -96,20 +192,28 @@ export default function Home() {
         <div className="mt-10 grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
 
           <div className="bg-gray-900 p-6 rounded-lg">
-            <h3 className="text-xl font-semibold">Currently Learning</h3>
+            <h3 className="text-xl font-semibold">
+              Currently Learning
+            </h3>
+
             <ul className="mt-4 text-gray-400 space-y-2">
               <li>Machine Learning</li>
-              <li>AI Agents & Automation (n8n)</li>
+              <li>AI Agents & Automation</li>
+              <li>Advanced Backend Engineering</li>
               <li>Data Structures & Algorithms</li>
             </ul>
           </div>
 
           <div className="bg-gray-900 p-6 rounded-lg">
-            <h3 className="text-xl font-semibold">Next Goals</h3>
+            <h3 className="text-xl font-semibold">
+              Next Goals
+            </h3>
+
             <ul className="mt-4 text-gray-400 space-y-2">
-              <li>Build AI SaaS Product</li>
+              <li>Build AI SaaS Products</li>
               <li>Master Deep Learning</li>
-              <li>Launch Tech Startup</li>
+              <li>Launch AI Startup</li>
+              <li>Work on Scalable Systems</li>
             </ul>
           </div>
 
@@ -118,19 +222,24 @@ export default function Home() {
       </div>
 
       {/* Contact Section */}
-      <div id="contact" className="py-20 px-6 text-center bg-gray-950">
+      <div
+        id="contact"
+        className="py-20 px-6 text-center bg-gray-950"
+      >
 
         <h2 className="text-3xl font-bold">
           Let's Work Together
         </h2>
 
         <p className="mt-4 text-gray-400">
-          Open for internships, jobs, and collaboration.
+          Open for internships, backend development,
+          AI projects, and collaboration.
         </p>
 
         <div className="mt-6 flex justify-center gap-4">
+
           <a
-            href="https://github.com/AbuBakkarSabitth"
+            href="https://github.com/AbuBakkarSabith"
             target="_blank"
             className="bg-white text-black px-6 py-3 rounded-lg hover:bg-gray-300"
           >
@@ -138,12 +247,13 @@ export default function Home() {
           </a>
 
           <a
-            href="https://linkedin.com/in/sabithmab2"
+            href="https://www.linkedin.com/in/sabithmab2/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B3sliCFrWQW6MVQ8pflZGkw%3D%3D"
             target="_blank"
             className="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black"
           >
             LinkedIn
           </a>
+
         </div>
 
       </div>
