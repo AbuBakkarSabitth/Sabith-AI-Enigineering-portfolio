@@ -1,20 +1,28 @@
+import { site } from "../data/site";
+
 export default function Navbar() {
   return (
-    <div className="flex justify-between items-center px-8 py-6 bg-black text-white">
-
-      <h1 className="text-xl font-bold">
-        Sabith.dev
-      </h1>
-
-      <div className="space-x-6">
-        <a href="#projects" className="hover:text-purple-400">
-          Projects
+    <header className="bg-black text-white">
+      <nav
+        aria-label="Main"
+        className="flex justify-between items-center px-8 py-6"
+      >
+        <a href="#top" className="text-xl font-bold">
+          {site.shortName}.dev
         </a>
-        <a href="#contact" className="hover:text-purple-400">
-          Contact
-        </a>
-      </div>
 
-    </div>
+        <div className="space-x-6">
+          <a href="#projects" className="hover:text-purple-400">
+            Projects
+          </a>
+          <a href="#about" className="hover:text-purple-400">
+            About
+          </a>
+          <a href="#contact" className="hover:text-purple-400">
+            Contact
+          </a>
+        </div>
+      </nav>
+    </header>
   );
 }
